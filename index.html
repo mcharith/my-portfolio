@@ -8,32 +8,30 @@
     <style>
         header{
             background-color: #2fc5a6;
-            height: 100px;
+            height: 5vw;
             position: fixed;
             width: 100%;
             top: 0;
             display: flex;
             align-items: center;
+            z-index: 10;
         }
         main{
             margin-top: 105px;
         }
         header>div>img{
-            width: 15vw;
+            width: 10vw;
             position: absolute;
             height: fit-content;
-            top: -30px;
-            bottom: 0;
-            left: -10px;
-            margin-right: 10px;
+            top: -20px;
         }
-        header>div>p{
-            font-size: 25px;
+        header>div>h5{
+            font-size: 20px;
             font-weight: bold;
-            margin: 0;
             position: absolute;
+            margin: auto;
             left: 55px;
-            top: 45px;
+            top: 27px;
         }
         header>nav>ul{
             list-style: none;
@@ -51,9 +49,53 @@
             display: inline;
             margin: 0px 10px;
             font-size: 20px;
+            color: #130f40;
         }
-        main>section{
+        .media{
             display: inline-grid;
+            position: absolute;
+            top: 105px;
+            right: 0;
+            z-index: 2;
+        }
+        .intro>.firstpagephoto{
+            width:450px;
+            height: 500px;
+            border-radius: 50%;
+            border: 5px solid #130f40;
+            position: absolute;
+            top: 110px;
+            left: 60px;
+        }
+        .intro>.hello{
+            font-size: 100px;
+            position: absolute;
+            top: 200px;
+            left: 520px;
+            margin: auto;
+        }
+        .intro>.name{
+            font-size: 90px;
+            position: absolute;
+            top: 300px;
+            left: 520px;
+            margin: auto;
+        }
+        .intro>.sd{
+            font-size: 50px;
+            font-style:italic;
+            color: #130f40;
+            position: absolute;
+            top: 400px;
+            left: 720px;
+            margin: auto;
+        }
+        .intro>.sayHellobtn{
+            font-size: 20px;
+            position: absolute;
+            top: 480px;
+            left: 1200px;
+            margin: auto;
         }
     </style>
 </head>
@@ -78,7 +120,7 @@
 </header>
 
 <!-- Social Media Section -->
-<section>
+<section class="media">
     <a href="#"><img src="assets/icons/icons8-facebook-50.png" alt="Facebook Icon"></a>
     <a href="https://www.linkedin.com/in/charith-siriwardana-b796182a4/">
         <img src="assets/icons/icons8-linkedin-50.png" alt="LinkedIn Icon">
@@ -95,15 +137,16 @@
 </section>
 
 <!-- Introduction Section -->
-<section id="intro">
-    <h1><b>Hello...I'm</b></h1>
-    <h1><b>Charith Siriwardana</b></h1>
-    <h1><i>Software Developer</i></h1>
-    <button>SAY HELLO</button>
+<section class="intro">
+    <img src="assets/images/firstpagephoto.png" class="firstpagephoto">
+    <h1 class="hello">Hello...I'm</h1>
+    <h1 class="name">Charith Siriwardana</h1>
+    <h1 class="sd">Software Developer.</h1>
+    <button class="sayHellobtn" type="submit">SAY HELLO</button>
 </section>
 
 <!-- About Section -->
-<section id="about">
+<section class="about">
     <div><h1>About Me</h1></div>
     <div><h2>&lt;SOFTWARE DEVELOPER&gt;</h2></div>
     <div>
@@ -127,23 +170,22 @@
 </section>
 
 <!-- Gallery Section -->
-<section id="gallery">
+<!--<section class="gallery">-->
+<!--    <div>-->
+<!--        <h1>Gallery</h1>-->
+<!--    </div>-->
 
-    <div>
-        <h1>Gallery</h1>
-    </div>
-
-    <div class="gallery-container">
-        <img src="assets/images/cafe.JPG" alt="Cafe">
-        <img src="assets/images/ijse.jpg" alt="Portrait">
-        <img src="assets/images/hotelForest.jpg" alt="Hotel Forest">
-        <img src="assets/images/saloon.jpg" alt="Saloon">
-        <img src="assets/images/beach.jpg" alt="Beach">
-    </div>
-</section>
+<!--    <div class="gallery-container">-->
+<!--        <img src="assets/images/cafe.JPG" alt="Cafe">-->
+<!--        <img src="assets/images/ijse.jpg" alt="Portrait">-->
+<!--        <img src="assets/images/hotelForest.jpg" alt="Hotel Forest">-->
+<!--        <img src="assets/images/saloon.jpg" alt="Saloon">-->
+<!--        <img src="assets/images/beach.jpg" alt="Beach">-->
+<!--    </div>-->
+<!--</section>-->
 
 <!-- Toolbox Section -->
-<section id="toolbox">
+<section class="toolbox">
     <div>
         <h1>ToolBox</h1>
     </div>
