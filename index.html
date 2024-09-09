@@ -66,6 +66,11 @@
             position: absolute;
             top: 110px;
             left: 60px;
+
+            transition-duration: 0.5ms;
+        }
+        .intro>.firstpagephoto:hover{
+            box-shadow: 1px 1px 100px #2fc5a6 ;
         }
         .intro>.hello{
             font-size: 100px;
@@ -104,6 +109,26 @@
             color: white;
             border: 1px solid #1B1464;
             padding: 5px 10px;
+        }
+        .about>div:nth-child(1)>h1{
+            font-size: 50px;
+            position: absolute;
+            right: 0;
+            left: 10px;
+            top: 650px;
+            bottom: 0;
+            margin: auto;
+        }
+        footer{
+            width: 100vw;
+            height: 35px;
+            background-color: #2f3640;
+            position: relative;
+        }
+        footer>div>p{
+            color: white;
+            text-align: center;
+            padding: 9px 0px;
         }
     </style>
 </head>
@@ -153,31 +178,33 @@
     <button class="sayHellobtn" type="submit">SAY HELLO</button>
 </section>
 
-<!-- About Section -->
+<!-- About Section-->
 <section class="about">
     <div><h1>About Me</h1></div>
     <div><h2>&lt;SOFTWARE DEVELOPER&gt;</h2></div>
-    <div>
-        <p>
-            I’m Charith Mihiranga Siriwardana, an undergraduate software engineering student.
-            I am currently learning more about software engineering, web development, and UI/UX design.
-            I like to improve my skills, and therefore, I work on various projects.
-        </p>
-    </div>
+        <section class="aboutCard">
+            <div>
+                <p>
+                    I’m Charith Mihiranga Siriwardana, an undergraduate software engineering student.
+                    I am currently learning more about software engineering, web development, and UI/UX design.
+                    I like to improve my skills, and therefore, I work on various projects.
+                </p>
+            </div>
 
-    <div><h3>Name: Charith Mihiranga Siriwardana</h3></div>
-    <div><h3>Location: Sri Lanka, Matale</h3></div>
-    <div><h3>Date of birth: 21st of October</h3></div>
-    <div><h3>Email: charithmihiranga453@gmail.com</h3></div>
-    <div>
-        <button>
-            <img src="assets/icons/icons8-download-60.png" alt="Download Icon" style="vertical-align: middle; width: 20px; height: 20px; margin-right: 5px;">
-            Download CV
-        </button>
-    </div>
+            <div><h3>Name: Charith Mihiranga Siriwardana</h3></div>
+            <div><h3>Location: Sri Lanka, Matale</h3></div>
+            <div><h3>Date of birth: 21st of October</h3></div>
+            <div><h3>Email: charithmihiranga453@gmail.com</h3></div>
+            <div>
+                <button>
+                    <img src="assets/icons/icons8-download-60.png" alt="Download Icon" style="vertical-align: middle; width: 20px; height: 20px; margin-right: 5px;">
+                    Download CV
+                </button>
+            </div>
+        </section>
 </section>
 
-<!-- Gallery Section -->
+<!-- Gallery Section-->
 <!--<section class="gallery">-->
 <!--    <div>-->
 <!--        <h1>Gallery</h1>-->
@@ -192,116 +219,116 @@
 <!--    </div>-->
 <!--</section>-->
 
-<!-- Toolbox Section -->
-<section class="toolbox">
-    <div>
-        <h1>ToolBox</h1>
-    </div>
-    <div>
-        <img src="assets/tools/html.png" alt="HTML">
-        <img src="assets/tools/css3.svg" alt="CSS3">
-        <img src="assets/tools/js.jpg" alt="JavaScript">
-        <img src="assets/tools/Angular.png" alt="Angular">
-        <img src="assets/tools/jquery.png" alt="jQuery">
-        <img src="assets/tools/c%23.png" alt="C#">
-        <img src="assets/tools/java.png" alt="Java">
-        <img src="assets/tools/php.png" alt="PHP">
-        <img src="assets/tools/c-programming.webp" alt="C Programming">
-        <img src="assets/tools/python-logo.png" alt="Python">
-        <img src="assets/tools/figma.webp" alt="Figma">
-        <img src="assets/tools/JavaFX_Logo.png" alt="JavaFX">
-        <img src="assets/tools/mysql.png" alt="MySQL">
-    </div>
-</section>
+<!-- Toolbox Section-->
+<!--<section class="toolbox">-->
+<!--    <div>-->
+<!--        <h1>ToolBox</h1>-->
+<!--    </div>-->
+<!--    <div>-->
+<!--        <img src="assets/tools/html.png" alt="HTML">-->
+<!--        <img src="assets/tools/css3.svg" alt="CSS3">-->
+<!--        <img src="assets/tools/js.jpg" alt="JavaScript">-->
+<!--        <img src="assets/tools/Angular.png" alt="Angular">-->
+<!--        <img src="assets/tools/jquery.png" alt="jQuery">-->
+<!--        <img src="assets/tools/c%23.png" alt="C#">-->
+<!--        <img src="assets/tools/java.png" alt="Java">-->
+<!--        <img src="assets/tools/php.png" alt="PHP">-->
+<!--        <img src="assets/tools/c-programming.webp" alt="C Programming">-->
+<!--        <img src="assets/tools/python-logo.png" alt="Python">-->
+<!--        <img src="assets/tools/figma.webp" alt="Figma">-->
+<!--        <img src="assets/tools/JavaFX_Logo.png" alt="JavaFX">-->
+<!--        <img src="assets/tools/mysql.png" alt="MySQL">-->
+<!--    </div>-->
+<!--</section>-->
 
 <!-- Assignments Section -->
-<section id="assignments">
-    <div>
-        <h1>Assignments</h1>
-    </div>
-    <div class="assignment-button1">
-        <img src="assets/images/assingment-logo.png" alt="Assignment">
-        <div class="number">01</div>
-    </div>
-    <div class="assignment-button2">
-        <img src="assets/images/assingment-logo.png" alt="Assignment">
-        <div class="number">02</div>
-    </div>
-    <div class="assignment-button3">
-        <img src="assets/images/assingment-logo.png" alt="Assignment">
-        <div class="number">03</div>
-    </div>
-    <div class="assignment-button4">
-        <img src="assets/images/assingment-logo.png" alt="Assignment">
-        <div class="number">04</div>
-    </div>
-    <div class="assignment-button5">
-        <img src="assets/images/assingment-logo.png" alt="Assignment">
-        <div class="number">05</div>
-    </div>
-    <div class="assignment-button6">
-        <img src="assets/images/assingment-logo.png" alt="Assignment">
-        <div class="number">06</div>
-    </div>
-</section>
+<!--<section id="assignments">-->
+<!--    <div>-->
+<!--        <h1>Assignments</h1>-->
+<!--    </div>-->
+<!--    <div class="assignment-button1">-->
+<!--        <img src="assets/images/assingment-logo.png" alt="Assignment">-->
+<!--        <div class="number">01</div>-->
+<!--    </div>-->
+<!--    <div class="assignment-button2">-->
+<!--        <img src="assets/images/assingment-logo.png" alt="Assignment">-->
+<!--        <div class="number">02</div>-->
+<!--    </div>-->
+<!--    <div class="assignment-button3">-->
+<!--        <img src="assets/images/assingment-logo.png" alt="Assignment">-->
+<!--        <div class="number">03</div>-->
+<!--    </div>-->
+<!--    <div class="assignment-button4">-->
+<!--        <img src="assets/images/assingment-logo.png" alt="Assignment">-->
+<!--        <div class="number">04</div>-->
+<!--    </div>-->
+<!--    <div class="assignment-button5">-->
+<!--        <img src="assets/images/assingment-logo.png" alt="Assignment">-->
+<!--        <div class="number">05</div>-->
+<!--    </div>-->
+<!--    <div class="assignment-button6">-->
+<!--        <img src="assets/images/assingment-logo.png" alt="Assignment">-->
+<!--        <div class="number">06</div>-->
+<!--    </div>-->
+<!--</section>-->
 
 <!-- Projects Section -->
-<section id="projects">
-    <div>
-        <h1>Projects</h1>
-    </div>
-    <div class="project-button1">
-        <img src="assets/images/wine-shop.jpg" alt="project1">
-        <div class="number">This is my 1st semester final project. It is a wine management system that includes item management, stock management, staff management, and purchase orders.</div>
-    </div>
-    <div class="project-button2">
-        <img src="assets/images/Grocery-store-POS-System.jpg" alt="project2">
-        <div class="number">This is my supermarket management project. This system includes item management, stock management, and purchase orders.</div>
-    </div>
+<!--<section id="projects">-->
+<!--    <div>-->
+<!--        <h1>Projects</h1>-->
+<!--    </div>-->
+<!--    <div class="project-button1">-->
+<!--        <img src="assets/images/wine-shop.jpg" alt="project1">-->
+<!--        <div class="number">This is my 1st semester final project. It is a wine management system that includes item management, stock management, staff management, and purchase orders.</div>-->
+<!--    </div>-->
+<!--    <div class="project-button2">-->
+<!--        <img src="assets/images/Grocery-store-POS-System.jpg" alt="project2">-->
+<!--        <div class="number">This is my supermarket management project. This system includes item management, stock management, and purchase orders.</div>-->
+<!--    </div>-->
 
-    <div class="project-button3">
-        <img src="assets/images/shoe-shop.jpg" alt="project3">
-        <div class="number">This is my shoe shop management project. This system includes item management, stock management, and purchase orders.</div>
-    </div>
-</section>
+<!--    <div class="project-button3">-->
+<!--        <img src="assets/images/shoe-shop.jpg" alt="project3">-->
+<!--        <div class="number">This is my shoe shop management project. This system includes item management, stock management, and purchase orders.</div>-->
+<!--    </div>-->
+<!--</section>-->
 
 <!-- Contact Section -->
-<section id="contact">
-    <div>
-        <h1>Contact Me</h1>
-    </div>
+<!--<section id="contact">-->
+<!--    <div>-->
+<!--        <h1>Contact Me</h1>-->
+<!--    </div>-->
 
-    <div>
-        <h3>I'LL BE GLAD TO ANSWER YOUR QUESTIONS!</h3>
-    </div>
+<!--    <div>-->
+<!--        <h3>I'LL BE GLAD TO ANSWER YOUR QUESTIONS!</h3>-->
+<!--    </div>-->
 
-    <div>
-        <form>
-            <input type="text" name="name" placeholder="Name">
-            <input type="email" name="email" placeholder="Email Address">
-            <input type="text" name="subject" placeholder="Subject">
-            <textarea name="message" placeholder="Your message"></textarea>
-            <button type="submit">Send message</button>
-        </form>
-    </div>
+<!--    <div>-->
+<!--        <form>-->
+<!--            <input type="text" name="name" placeholder="Name">-->
+<!--            <input type="email" name="email" placeholder="Email Address">-->
+<!--            <input type="text" name="subject" placeholder="Subject">-->
+<!--            <textarea name="message" placeholder="Your message"></textarea>-->
+<!--            <button type="submit">Send message</button>-->
+<!--        </form>-->
+<!--    </div>-->
 
-    <div>
-        <p>+94 77 8986 962 | charithmihiranga453@gmail.com</p>
-    </div>
+<!--    <div>-->
+<!--        <p>+94 77 8986 962 | charithmihiranga453@gmail.com</p>-->
+<!--    </div>-->
 
-</section>
+<!--    <div>-->
+<!--        <p>AROUND THE WEB</p>-->
+<!--        <a href="#"><img src="assets/icons/icons8-facebook-50.png" alt="Facebook"></a>-->
+<!--        <a href="#"><img src="assets/icons/icons8-instagram-50.png" alt="Instagram"></a>-->
+<!--        <a href="#"><img src="assets/icons/icons8-linkedin-50.png" alt="LinkedIn"></a>-->
+<!--        <a href="#"><img src="assets/icons/icons8-github-60.png" alt="GitHub"></a>-->
+<!--        <a href="#"><img src="assets/icons/icons8-gmail-50.png" alt="Email"></a>-->
+<!--    </div>-->
+
+<!--</section>-->
 
 <!-- Footer Section -->
 <footer>
-    <div>
-        <p>AROUND THE WEB</p>
-        <a href="#"><img src="assets/icons/icons8-facebook-50.png" alt="Facebook"></a>
-        <a href="#"><img src="assets/icons/icons8-instagram-50.png" alt="Instagram"></a>
-        <a href="#"><img src="assets/icons/icons8-linkedin-50.png" alt="LinkedIn"></a>
-        <a href="#"><img src="assets/icons/icons8-github-60.png" alt="GitHub"></a>
-        <a href="#"><img src="assets/icons/icons8-gmail-50.png" alt="Email"></a>
-    </div>
-
     <div>
         <p>&copy; Charith Sriwardana. All rights reserved.</p>
     </div>
