@@ -6,7 +6,18 @@
     <title>Charith Siriwardana</title>
     <link rel="stylesheet" href="assets/styles/normalize.css">
     <style>
-        header{
+        /* General Styles */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Header Section */
+        header {
             background-color: #2fc5a6;
             height: 5vw;
             position: fixed;
@@ -14,136 +25,192 @@
             top: 0;
             display: flex;
             align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
             z-index: 10;
         }
-        main{
-            margin-top: 105px;
+
+        header>div>img {
+            width: 50px;
+            height: auto;
         }
-        header>div>img{
-            width: 10vw;
-            position: absolute;
-            height: fit-content;
-            top: -20px;
-        }
-        header>div>h5{
+
+        header h5 {
             font-size: 20px;
             font-weight: bold;
+            margin-left: 15px;
+            color: #130f40;
             position: absolute;
-            margin: auto;
-            left: 55px;
-            top: 27px;
+            top: 10px;
         }
-        header>nav>ul{
+
+        nav ul {
             list-style: none;
-            display: inline-block;
+            display: flex;
+            padding: 0;
         }
-        header>nav{
-            height: fit-content;
-            position: absolute;
-            right: 10px;
-            top: 0;
-            bottom: 0;
-            margin: auto;
-        }
-        header>nav>ul>li{
-            display: inline;
-            margin: 0px 10px;
+
+        nav ul li {
+            margin: 0 10px;
             font-size: 20px;
             color: #130f40;
         }
-        .media{
-            display: inline-grid;
-            position: absolute;
+
+        nav ul li a {
+            text-decoration: none;
+            color: #130f40;
+        }
+
+        /* Main Section */
+        main {
+            margin-top: 105px;
+        }
+
+        .media {
+            display: flex;
+            flex-direction: column;
+            position: fixed;
             top: 105px;
             right: 0;
             z-index: 2;
-        }
-        .intro>.firstpagephoto{
-            width:450px;
-            height: 500px;
-            border-radius: 50%;
-            border: 5px solid #130f40;
-            position: absolute;
-            top: 110px;
-            left: 60px;
-
-            transition-duration: 0.5ms;
-        }
-        .intro>.firstpagephoto:hover{
-            box-shadow: 1px 1px 100px #2fc5a6 ;
-        }
-        .intro>.hello{
-            font-size: 100px;
-            position: absolute;
-            top: 200px;
-            left: 520px;
-            margin: auto;
-            text-shadow: 2px 2px 5px #2fc5a6;
-        }
-        .intro>.name{
-            font-size: 90px;
-            position: absolute;
-            top: 300px;
-            left: 520px;
-            margin: auto;
-            text-shadow: 2px 2px 5px #2fc5a6;
-        }
-        .intro>.sd{
-            font-size: 50px;
-            font-style:italic;
-            color: #1B1464;
-            position: absolute;
-            top: 400px;
-            left: 720px;
-            margin: auto;
-            text-shadow: 2px 2px 5px #2fc5a6;
-        }
-        .intro>.sayHellobtn{
-            font-size: 25px;
-            position: absolute;
-            top: 480px;
-            left: 1200px;
-            margin: auto;
-            background-color: #1B1464;
-            border-radius: 10px;
-            color: white;
-            border: 1px solid #1B1464;
-            padding: 5px 10px;
-        }
-        .about>div:nth-child(1)>h1{
-            font-size: 50px;
-            margin-top: 650px;
-            margin-left: 10px;
-        }
-        .about>div:nth-child(2)>h2{
-            font-size: 25px;
-            margin-top: 0;
-            margin-left: 60px;
-        }
-        .aboutCard{
-            max-width: 800px;
-            background: ghostwhite;
             padding: 10px;
-            border-radius: 20px;
-            margin-left: 300px;
         }
-        .aboutCard>div>p{
-            font-size: 20px;
+
+        .media img {
+            margin-bottom: 10px;
+        }
+
+        /* Introduction Section */
+        .intro {
+            margin-top: 105px;
+            padding: 20px;
             text-align: center;
-        }
-        .aboutCard>.details{
-            text-align: center;
-        }
-        footer{
-            width: 100vw;
-            height: 35px;
-            background-color: #2f3640;
             position: relative;
         }
-        footer>div>p{
+
+        .firstpagephoto {
+            width: 30vw;
+            height: auto;
+            border-radius: 50%;
+            border: 5px solid #130f40;
+            transition-duration: 0.5s;
+            display: inline-block;
+        }
+
+        .firstpagephoto:hover {
+            box-shadow: 1px 1px 30px #2fc5a6;
+        }
+
+        .hello, .name, .sd {
+            text-shadow: 2px 2px 5px #2fc5a6;
+        }
+
+        .hello {
+            font-size: 4vw;
+            margin-top: 20px;
+        }
+
+        .name {
+            font-size: 3.5vw;
+            margin-top: 10px;
+        }
+
+        .sd {
+            font-size: 2.5vw;
+            margin-top: 10px;
+            font-style: italic;
+            color: #1B1464;
+        }
+
+        .sayHellobtn {
+            font-size: 20px;
+            background-color: #1B1464;
             color: white;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .sayHellobtn:hover {
+            background-color: #2fc5a6;
+        }
+
+        /*about section*/
+        .about {
+            padding: 50px 20px;
             text-align: center;
-            padding: 9px 0px;
+        }
+
+        .about h1 {
+            font-size: 4vw;
+            margin-bottom: 20px;
+        }
+
+        .about h2 {
+            font-size: 2vw;
+        }
+
+        .aboutCard {
+            max-width: 80%;
+            background: ghostwhite;
+            padding: 20px;
+            border-radius: 20px;
+            margin: 20px auto;
+        }
+
+        .aboutCard p {
+            font-size: 1.5vw;
+        }
+
+        .aboutCard .details {
+            margin-top: 20px;
+        }
+
+        .aboutCard .details h3 {
+            font-size: 1.5vw;
+        }
+
+        .downloadButton {
+            background-color: DodgerBlue;
+            border: none;
+            color: white;
+            padding: 12px 30px;
+            cursor: pointer;
+            font-size: 1.5vw;
+            border-radius: 10px;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+
+        .downloadButton:hover {
+            background-color: RoyalBlue;
+        }
+
+
+        /*Contact section*/
+        .contact{
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        /* Footer Section */
+        footer {
+            width: 100vw;
+            height: 50px;
+            background-color: #2f3640;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        footer p {
+            color: white;
+            margin: 0;
+            text-align: center;
         }
     </style>
 </head>
@@ -208,14 +275,13 @@
 
             <div class="details">
                 <div><h3>Name: Charith Mihiranga Siriwardana</h3></div>
-                <div><h3>Location:    Sri Lanka, Matale</h3></div>
+                <div><h3>Location:Sri Lanka, Matale</h3></div>
                 <div><h3>Date of birth: 21st of October</h3></div>
                 <div><h3>Email: charithmihiranga453@gmail.com</h3></div>
             </div>
 
             <div>
-                <button>
-                    <img src="assets/icons/icons8-download-60.png" alt="Download Icon" style="vertical-align: middle; width: 20px; height: 20px; margin-right: 5px;">
+                <button class="downloadButton">
                     Download CV
                 </button>
             </div>
@@ -311,40 +377,40 @@
 <!--    </div>-->
 <!--</section>-->
 
-<!-- Contact Section -->
-<!--<section id="contact">-->
-<!--    <div>-->
-<!--        <h1>Contact Me</h1>-->
-<!--    </div>-->
+<!-- Contact Section-->
+<section class="contact">
+    <div>
+        <h1>Contact Me</h1>
+    </div>
 
-<!--    <div>-->
-<!--        <h3>I'LL BE GLAD TO ANSWER YOUR QUESTIONS!</h3>-->
-<!--    </div>-->
+    <div>
+        <h3>I'LL BE GLAD TO ANSWER YOUR QUESTIONS!</h3>
+    </div>
 
-<!--    <div>-->
-<!--        <form>-->
-<!--            <input type="text" name="name" placeholder="Name">-->
-<!--            <input type="email" name="email" placeholder="Email Address">-->
-<!--            <input type="text" name="subject" placeholder="Subject">-->
-<!--            <textarea name="message" placeholder="Your message"></textarea>-->
-<!--            <button type="submit">Send message</button>-->
-<!--        </form>-->
-<!--    </div>-->
+    <div>
+        <form>
+            <input type="text" name="name" placeholder="Name">
+            <input type="email" name="email" placeholder="Email Address">
+            <input type="text" name="subject" placeholder="Subject">
+            <textarea name="message" placeholder="Your message"></textarea>
+            <button type="submit">Send message</button>
+        </form>
+    </div>
 
-<!--    <div>-->
-<!--        <p>+94 77 8986 962 | charithmihiranga453@gmail.com</p>-->
-<!--    </div>-->
+    <div>
+        <p>+94 77 8986 962 | charithmihiranga453@gmail.com</p>
+    </div>
 
-<!--    <div>-->
-<!--        <p>AROUND THE WEB</p>-->
-<!--        <a href="#"><img src="assets/icons/icons8-facebook-50.png" alt="Facebook"></a>-->
-<!--        <a href="#"><img src="assets/icons/icons8-instagram-50.png" alt="Instagram"></a>-->
-<!--        <a href="#"><img src="assets/icons/icons8-linkedin-50.png" alt="LinkedIn"></a>-->
-<!--        <a href="#"><img src="assets/icons/icons8-github-60.png" alt="GitHub"></a>-->
-<!--        <a href="#"><img src="assets/icons/icons8-gmail-50.png" alt="Email"></a>-->
-<!--    </div>-->
+    <div>
+        <p>AROUND THE WEB</p>
+        <a href="#"><img src="assets/icons/icons8-facebook-50.png" alt="Facebook"></a>
+        <a href="#"><img src="assets/icons/icons8-instagram-50.png" alt="Instagram"></a>
+        <a href="#"><img src="assets/icons/icons8-linkedin-50.png" alt="LinkedIn"></a>
+        <a href="#"><img src="assets/icons/icons8-github-60.png" alt="GitHub"></a>
+        <a href="#"><img src="assets/icons/icons8-gmail-50.png" alt="Email"></a>
+    </div>
 
-<!--</section>-->
+</section>
 
 <!-- Footer Section -->
 <footer>
