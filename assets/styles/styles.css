@@ -207,3 +207,48 @@ span {
     font-size: 1.6rem;
     margin: 2rem 0 3rem;
 }
+
+/*Project Section*/
+
+.project h2{
+    margin-bottom: 5rem;
+}
+
+.project-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    image-resolution: snap;
+}
+
+.project-container .project-box{
+    flex: 1 1 30rem;
+    background: #d6f5ef;
+    padding: 6rem 2rem 6rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: 0.3rem solid #c1f0e7;
+    transition: 0.3s ease;
+}
+
+.project-container .project-box:hover{
+    border-color: #2fc5a6;
+    transform: scale(1.02);
+}
+
+.project-box i {
+    font-size: 7rem;
+    color: #2fc5a6;
+}
+
+.project-box h3{
+    font-size: 2.6rem;
+}
+
+.project-box p{
+    font-size: 1.6rem;
+    margin: 1rem 0 3rem;
+}
+
