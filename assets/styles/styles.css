@@ -159,3 +159,51 @@ span {
 .btn:hover{
     box-shadow: 0 0 1.6rem darkblue;
 }
+
+/*About Section*/
+
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    background-color: #c1f0e7;
+}
+
+.about-img img{
+    width: 25vw;
+    border: 2px solid #2fc5a6;
+    border-radius: 50%;
+    box-shadow: 0 0 25px #2fc5a6;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+
+.about-img img:hover{
+    box-shadow: 0 0 25px #2fc5a6,
+    0 0 35px #2fc5a6,
+    0 0 45px #2fc5a6;
+}
+
+.heading{
+    font-size: 6rem;
+    text-align: center;
+}
+
+.about-content{
+    padding: 0 4rem;
+}
+
+.about-content h2{
+    text-align: left;
+    line-height: 1.2;
+}
+
+.about-content h3{
+    font-size: 3rem;
+}
+
+.about-content p{
+    font-size: 1.6rem;
+    margin: 2rem 0 3rem;
+}
