@@ -252,3 +252,73 @@ span {
     margin: 1rem 0 3rem;
 }
 
+/*Assingment Section*/
+
+.assingment{
+    background:#eafaf7;
+}
+
+.assingment-box{
+    background-size:cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.assingment .heading{
+    margin-bottom:5rem ;
+}
+
+.assingment-box img{
+    width: 10rem;
+    border-radius: 50%;
+    border: 3px solid #2fc5a6;
+    box-shadow: 0 0 25px #c1f0e7;
+}
+
+.warpper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 3rem;
+}
+
+.assingment-item{
+    min-height: 350px;
+    min-width: 350px;
+    background: white;
+    border: 0.3rem solid #c1f0e7;
+    border-radius: 2rem;
+    margin: 0 2rem;
+    padding: 20px 20px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    color: black;
+    transition: 0.3s ease;
+}
+
+.assingment-item:hover{
+    border-color: #28a48b;
+    transform: scale(1.02);
+    background-color: #ccccff;
+    box-shadow: 0 0 20px #000099;
+}
+
+.assingment-item h2{
+    font-size: 3rem;
+}
+
+.assingment-item p{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.rating{
+    color: gold;
+    font-size: 2rem;
+}
+
