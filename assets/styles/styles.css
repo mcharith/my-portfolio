@@ -548,3 +548,51 @@ span {
         min-width: 100%;
     }
 }
+
+@media (max-width: 576px) {
+    .header {
+        padding: 1rem 3%;
+    }
+
+    .navbar {
+        min-height: auto;
+    }
+
+    .navbar a {
+        font-size: 1.4rem;
+    }
+
+    .home {
+        flex-direction: column;
+    }
+
+    .home-content h1 {
+        font-size: 3.5rem;
+    }
+
+    .home-content p {
+        font-size: 1.4rem;
+    }
+
+    .social-media a {
+        width: 30px;
+        height: 30px;
+        font-size: 1.5rem;
+    }
+
+    .about-content h2 {
+        font-size: 2rem;
+    }
+
+    .assingment-item {
+        min-width: 100%;
+    }
+
+    .contact form {
+        min-width: 90%;
+    }
+
+    .project-container .project-box {
+        padding: 4rem 1rem;
+    }
+}
