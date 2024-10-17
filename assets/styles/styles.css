@@ -420,11 +420,29 @@ span {
 
 /*Responsive*/
 
-/*Large Laptop*/
-@media (max-width: 1440px) {
+@media (max-width: 1200px) {
     html{
-        font-size: 60%;
+        font-size: 55%;
     }
 }
 
-
+@media (max-width: 991px) {
+    .header{
+        padding: 2rem 3%;
+    }
+    section{
+        padding: 10rem 3%;
+    }
+    .project{
+        padding: 7rem;
+    }
+    .assingment .warpper{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .contact form .input-box{
+        width: 100%;
+    }
+    .footer{
+        padding: 2rem 3%;
+    }
+}
