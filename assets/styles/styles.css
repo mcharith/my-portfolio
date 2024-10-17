@@ -418,3 +418,13 @@ span {
     color: white;
 }
 
+/*Responsive*/
+
+/*Large Laptop*/
+@media (max-width: 1440px) {
+    html{
+        font-size: 60%;
+    }
+}
+
+
