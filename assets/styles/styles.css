@@ -283,6 +283,10 @@ span {
     gap: 3rem;
 }
 
+.see-btn {
+    background-color: #4caf50;
+}
+
 .assingment-item{
     min-height: 350px;
     min-width: 350px;
