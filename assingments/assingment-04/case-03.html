@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case-03</title>
+    <style>
+        section{
+            width: 800px;
+            height: 600px;
+        }
+        div{
+            width: 200px;
+            height: 100px;
+            background: blue;
+            border-radius: 10px;
+
+            animation: my-animation 3s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+
+        }
+        @keyframes my-animation {
+            0%{
+                margin-left: 0;
+                margin-top: 0;
+                background: gray;
+                transform: rotate(0deg);
+            }
+            25%{
+                margin-left: 800px;
+                margin-top: 0;
+                background: yellow;
+                transform: rotate(180deg);
+            }
+            50%{
+                margin-left: 800px;
+                margin-top: 400px;
+                background: red;
+                transform: rotate(360deg);
+            }
+            75%{
+                margin-left: 0;
+                margin-top: 400px;
+                background: hotpink;
+                transform: rotate(0deg);
+            }
+            100%{
+                margin-left: 0;
+                margin-top: 0;
+                background: orange;
+                transform: rotate(180deg);
+            }
+        }
+    </style>
+</head>
+<body>
+<section>
+    <div></div>
+</section>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case-01</title>
+    <link rel="stylesheet" href="assets/styles/normalize.css">
+    <style>
+        body{
+            overflow: hidden;
+        }
+        body>section{
+            width: 50vw;
+            height: 50vh;
+            position: absolute;
+        }
+        body>section:first-child{
+            background-color: red;
+        }
+        body>section:nth-child(2){
+            background-color: green;
+            right: 0;
+        }
+        body>section:nth-child(3){
+            background-color: gold;
+            left: 0;
+            bottom: 0;
+        }
+        body>section:nth-child(4){
+            background-color: deeppink;
+            right: 0;
+            bottom: 0;
+        }
+
+
+        body>section>div{
+            width: 15vw;
+            height: 15vw;
+            background-color: white;
+            border-radius: 100%;
+            position: absolute;
+            margin: auto;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+        }
+        body>section>div>div{
+            width: 5vw;
+            height: 5vw;
+            background-color: red;
+            position: absolute;
+            margin: auto;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+        }
+
+        .circles{
+            background-color: white;
+            width: 15vw;
+            height: 15vw;
+            position: absolute;
+            border-radius: 100%;
+        }
+
+        #corner1{
+            top: calc(-15vw/2);
+            left: calc(-15vw/2);
+        }
+        #corner2{
+            top: calc(-15vw/2);
+            right: calc(-15vw/2);
+        }
+        #corner3{
+            bottom: calc(-15vw/2);
+            right: calc(-15vw/2);
+        }
+        #corner4{
+            bottom: calc(-15vw/2);
+            left: calc(-15vw/2);
+        }
+        #corner5{
+            top: calc(-15vw/2);
+            right: 0;
+            left: 0;
+            margin: auto;
+        }
+        #corner6{
+            bottom: calc(-15vw/2);
+            right: 0;
+            left: 0;
+            margin: auto;
+        }
+
+        #mid{
+            width: 15vw;
+            height: 15vw;
+            background-color: white;
+            position: absolute;
+            margin: auto;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+        }
+        #mid>div{
+            width: 5vw;
+            height: 5vw;
+            background-color: red;
+            border-radius: 100%;
+            position: absolute;
+            margin: auto;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+
+<section>
+    <div>
+        <div></div>
+    </div>
+</section>
+
+<section>
+    <div>
+        <div></div>
+    </div>
+</section>
+
+<section>
+    <div>
+        <div></div>
+    </div>
+</section>
+
+<section>
+    <div>
+        <div></div>
+    </div>
+</section>
+
+
+<div id="corner1" class="circles"></div>
+<div id="corner2" class="circles"></div>
+<div id="corner3" class="circles"></div>
+<div id="corner4" class="circles"></div>
+<div id="corner5" class="circles"></div>
+<div id="corner6" class="circles"></div>
+
+<div id="mid">
+    <div></div>
+</div>
+
+
+</body>
+</html>

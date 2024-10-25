@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Case 3</title>
+  <link rel="stylesheet" href="assets/styles/normalize.css">
+  <style>
+    /*body, html {*/
+    /*  margin: 0;*/
+    /*  padding: 0;*/
+    /*  height: 100%;*/
+    /*  display: flex;*/
+    /*  justify-content: center;*/
+    /*  align-items: center;*/
+    /*  background-color: white;*/
+    /*}*/
+
+    .circle {
+      position: fixed;
+      width: 200px;
+      height: 200px;
+      background: gray;
+      border-radius: 100%;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      margin: auto;
+    }
+
+    .inner-circle {
+      width: 150px;
+      height: 150px;
+      background-color: purple;
+      border: 10px solid red;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      margin: auto;
+    }
+
+    .inner-circle span {
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+<div class="circle">
+  <div class="inner-circle">
+    <span>Hello</span>
+  </div>
+</div>
+</body>
+</html>
