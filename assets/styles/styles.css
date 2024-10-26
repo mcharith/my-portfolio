@@ -280,16 +280,12 @@ span {
 .warpper{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    gap: 3rem;
-}
-
-.see-btn {
-    background-color: #4caf50;
+    gap: 4rem;
 }
 
 .assingment-item{
-    min-height: 350px;
-    min-width: 350px;
+    min-height: 50px;
+    min-width: 150px;
     background: white;
     border: 0.3rem solid #c1f0e7;
     border-radius: 2rem;
@@ -306,11 +302,52 @@ span {
 }
 
 .assingment-item:hover{
-    border-color: #28a48b;
+    border-color: darkcyan;
     transform: scale(1.02);
-    background-color: #ccccff;
-    box-shadow: 0 0 20px #000099;
+    /*background-color: #ccccff;*/
+    /*box-shadow: 0 0 20px #000099;*/
 }
+
+
+/*.buttons {*/
+/*    display: none; !* Initially hide the buttons *!*/
+/*    margin-top: 1rem;*/
+/*}*/
+
+/*.assingment-item:hover .buttons {*/
+/*    display: flex; !* Show buttons on hover *!*/
+/*    gap: 1rem;*/
+/*}*/
+
+/*.btn {*/
+/*    padding: 0.5rem 1rem;*/
+/*    border: none;*/
+/*    border-radius: 1rem;*/
+/*    background-color: #28a48b;*/
+/*    color: white;*/
+/*    font-size: 1rem;*/
+/*    cursor: pointer;*/
+/*    transition: background-color 0.3s ease;*/
+/*    text-decoration: none;*/
+/*    text-align: center;*/
+/*}*/
+
+/*.btn:hover {*/
+/*    background-color: #1f7f64;*/
+/*}*/
+
+.see-btn {
+    background-color: #4caf50;
+}
+
+/*.live-run-btn {*/
+/*    background-color: #2196f3;*/
+/*}*/
+
+/*.see-btn:hover, .live-run-btn:hover {*/
+/*    background-color: #1769aa; !* Darken on hover *!*/
+/*}*/
+
 
 .assingment-item h2{
     font-size: 3rem;
@@ -325,6 +362,7 @@ span {
     color: gold;
     font-size: 2rem;
 }
+
 
 /*Contact Section*/
 
